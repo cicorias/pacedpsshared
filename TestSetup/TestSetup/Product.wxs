@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="49b07493-277f-4336-bd06-0961c32f4f84"
+           Name="TestSetup"
+           Language="1033"
+           Version="1.0.0.0"
+           Manufacturer="CedarLogic"
+           UpgradeCode="13b7e643-e26c-4baa-8897-ab77eb006e78">
+    <Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <Feature Id="ProductFeature"
+             Title="TestSetup"
+             Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR"
+               Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER"
+                   Name="TestSetup" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents"
+                    Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <Component Id="MainFiles" DiskId="1" Guid="49B07493-277F-4336-BD06-0961C32F4F80">
+        <!--TODO: Insert files, registry keys, and other resources here.-->
+        <File Id="supportinglibrary"
+              Source="$(var.ConsoleApplication1.TargetDir)ClassLibrary1.dll"
+              />
+        <File Id="consoleapp"
+              Source="$(var.ConsoleApplication1.TargetPath)"
+               />
+      </Component>
+
+    </ComponentGroup>
+  </Fragment>
+</Wix>
