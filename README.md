@@ -1,4 +1,1 @@
-pacedpsshared
-=============
-
-Shared Stuff for Pace DPS related items
+Pace University DPS Program Shared Repository=============General stuff related to sharing ideas, topics, etc. Shawn CicoriaPersonal site [www.Cicoria.com](http://www.cicoria.com)Other sites: MSDN Blog [blogs.MSDN.com/scicoria](http://blogs.msdn.com/scicoria)DPS Related: [www.Cicoria.org](http://www.cicoria.org)Read more about the Pace EPS [here:](http://www.pace.edu/seidenberg/seidenberg-programs/doctoral-programs/dps-for-computing-and-it-professionals)
