@@ -2,6 +2,7 @@
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
+using System.Configuration;
 
 namespace PaceDpsWeb
 {
@@ -28,11 +29,15 @@ namespace PaceDpsWeb
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            var fbId = ConfigurationManager.AppSettings["fbAppId"];
+            var fbSecret = ConfigurationManager.AppSettings["fbSecret"];
+
+            app.UseFacebookAuthentication(
+               appId: fbId,
+               appSecret: fbSecret);
+
+            app.UseGoogleAuthentication();
         }
     }
 }
