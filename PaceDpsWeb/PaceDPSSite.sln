@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CFE3B7
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MainDatabase", "MainDatabase\MainDatabase.sqlproj", "{3CCC4ABF-702C-4226-9D9A-132A89B58E90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,12 @@ Global
 		{18D20213-3912-4473-B9AE-0B86984BAF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D20213-3912-4473-B9AE-0B86984BAF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D20213-3912-4473-B9AE-0B86984BAF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CCC4ABF-702C-4226-9D9A-132A89B58E90}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
