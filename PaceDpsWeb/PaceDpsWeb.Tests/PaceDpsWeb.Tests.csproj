@@ -95,7 +95,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication1\PaceDpsWeb.csproj">
+    <ProjectReference Include="..\PaceDpsWeb\PaceDpsWeb.csproj">
       <Project>{644D9D10-DF84-4210-9220-C4CC99B26FE2}</Project>
       <Name>PaceDpsWeb</Name>
     </ProjectReference>
